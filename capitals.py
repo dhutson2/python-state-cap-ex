@@ -177,6 +177,8 @@ score = {
 # print(test[3]) <- returns 2nd object
 # print(test[0]['capital'][0]) <- returns first letter of capital
 
+# TO PLAY FULL GAME REPLACE TEST VARIABLE BELOW WITH STATES
+
 
 def states_game():
     random.shuffle(test)
