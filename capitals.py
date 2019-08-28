@@ -179,6 +179,8 @@ score = {
 
 # TO PLAY FULL GAME REPLACE TEST VARIABLE BELOW WITH STATES
 
+start_game = input('ready to play? yes/no ')
+
 
 def states_game():
     random.shuffle(test)
@@ -206,12 +208,14 @@ def states_game():
         check_answer()
     print("{} {}".format(
         "Here is how many you got correct! : ", score['correct']))
+    start_game = input('ready to play? yes/no ')
+    if start_game == 'yes':
+        states_game()
+    elif start_game == 'no':
+        print('bye!')
 
-
-start_game = input('ready to play? yes/no ')
 
 if start_game == 'yes':
     states_game()
 elif start_game == 'no':
-    print('too bad!')
-    states_game()
+    print('bye!')
